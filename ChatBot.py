@@ -12,5 +12,12 @@ def chat():
     input = msg
     return get_chat_response(input)
 
+def get_chat_response(Text)
+#lets chat 5 lines
+for step in range(5):
+    #encode the new user input, add the eos_token and return a tesor in pytorch
+    new_user_input_ids = tokenizer.encode(input(">>user:")) + tokenizer.eos_token, return_tensor = 'pt')
 
-    
+
+
+
