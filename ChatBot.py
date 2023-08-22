@@ -12,3 +12,12 @@ from authlib.integrations.flask_client import OAuth
 from dotenv import find_dotenv, load_dotenv
 from flask import Flask, redirect, render_template, session, url_for, request
 from apscheduler.schedulers.background import BackgroundScheduler
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
