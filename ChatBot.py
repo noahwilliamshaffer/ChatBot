@@ -17,6 +17,8 @@ def get_chat_response(Text)
 for step in range(5):
     #encode the new user input, add the eos_token and return a tesor in pytorch
     new_user_input_ids = tokenizer.encode(input(">>user:")) + tokenizer.eos_token, return_tensor = 'pt')
+    #append the new user iunput tokens to the chat history
+    bot_input_ids = torch.cat([chat_history_ids, new_user_ids], dim = -1) if step > 0 else new_new_user_input_ids
 
 
 
