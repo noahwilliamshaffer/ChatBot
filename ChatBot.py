@@ -6,13 +6,13 @@ app = Flask(__name__)
 def index(): 
     return render_template('chat.html')
 
-@app.route("get", methods = ["GET","POST"]
+@app.route("get", methods = ["GET","POST"])
 def chat():
     msg = request.form("msg")
     input = msg
     return get_chat_response(input)
 
-def get_chat_response(Text)
+def get_chat_response(Text):
 #lets chat 5 lines
 
 #we are returning this response but we dont want to print it
