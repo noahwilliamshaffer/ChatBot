@@ -1,4 +1,4 @@
-import flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -28,6 +28,9 @@ def get_chat_response(Text)
 
         #pretty print last output tokens from bot
         return tokenizer.decode(chat_history_ids[:,bot_input_ids[-1]:][0],skip_special_tokens=True)
+
+if __name__ == "__main__":
+      app.run()
 
 
 
